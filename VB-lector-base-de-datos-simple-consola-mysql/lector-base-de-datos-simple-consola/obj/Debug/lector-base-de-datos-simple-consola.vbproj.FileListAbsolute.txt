@@ -1,1 +1,2 @@
 D:\Drive\Proyectos\EjemplosDeCodigo\lector-base-de-datos-simple-consola\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe.config

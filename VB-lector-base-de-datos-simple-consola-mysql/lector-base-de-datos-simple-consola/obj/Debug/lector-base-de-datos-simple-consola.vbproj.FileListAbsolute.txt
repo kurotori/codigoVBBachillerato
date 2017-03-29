@@ -1,0 +1,1 @@
+D:\Drive\Proyectos\EjemplosDeCodigo\lector-base-de-datos-simple-consola\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe.config

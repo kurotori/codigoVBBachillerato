@@ -203,35 +203,45 @@ Module Module1
 
     End Sub
 
+    'El Sub "VerTablas" es muy semejante en estructura al anterior, pero requiere un dato mas
+    ' para su ejecución: "base", donde indicaremos al Sub qué base de datos abriremos para ver 
+    ' un listado de sus tablas.
     Sub VerTablas(servidor As String, usuario As String, contrasenia As String, base As String)
 
+        'Inicializamos el objeto de conexión y le pasamos las credenciales de acceso
         conexion = New MySqlConnection()
         conexion.ConnectionString = "server='" & servidor & "';" &
                                     "user=" & usuario & ";" &
                                     "password=" & contrasenia & ";"
 
         Try
+            'Abrimos la conexión
             conexion.Open()
             Console.WriteLine("Servidor: " & servidor)
             Console.WriteLine("Mostrando Tablas Disponibles en la Base de Datos" & base & ":")
             Console.WriteLine("-----------------------------------------------------")
 
+            'Definimos la consulta, creamos el comando y lo ejecutamos con un lector
+            ' para obtener los datos
             Dim consulta As String = "SHOW TABLES FROM " & base
             Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
             Dim lector As MySqlDataReader = comando.ExecuteReader()
 
+            'Analizamos los resultados del lector y los mostramos en pantalla
             If lector.HasRows Then
                 While lector.Read()
                     Console.WriteLine(lector.GetString(0))
                 End While
             End If
 
+            'Manejo de errores de conexión
         Catch ex As Exception
             Console.WriteLine("No se ha podido conectar al servidor.")
             Console.WriteLine("-----------------------------------------------------")
             Console.WriteLine("Error: " & ex.ToString)
         End Try
 
+        'Cerramos la conexión
         conexion.Close()
 
     End Sub

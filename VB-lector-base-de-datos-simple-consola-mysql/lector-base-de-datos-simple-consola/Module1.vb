@@ -14,7 +14,7 @@ Module Module1
 
     'La palabra clave "Friend" es un modificador de acceso implica que el objeto 
     ' solo se puede acceder desde código dentro de este proyecto.
-    ' Para ver información sobre modificadores de acceso, visitar 
+    ' Para ver información sobre modificadores de acceso, visitar https://goo.gl/W0mP56
     Dim servidor As String
     Dim usuario As String
     Dim contrasenia As String

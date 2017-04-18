@@ -76,8 +76,6 @@ Module Module1
         Dim nombreBD As String = ""
         nombreBD = Console.ReadLine()
         CrearBase(servidor, usuario, contrasenia, nombreBD)
-        nombreBD = Console.Read()
-
 
     End Sub
 
@@ -268,24 +266,37 @@ Module Module1
             'Abrimos la conexión
             conexion.Open()
             Console.WriteLine("Servidor: " & servidor)
-            Console.WriteLine("Creando la Base de Datos: " & base & ":")
+            Console.WriteLine("Creando la Base de Datos: " & base)
             Console.WriteLine("-----------------------------------------------------")
 
-            'Definimos la consulta, creamos el comando y lo ejecutamos con un lector
-            ' para obtener los datos
+            'Definimos la consulta, creamos el comando y lo ejecutamos
             Dim consulta As String = "CREATE database " & base & ";"
             Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+
             comando.ExecuteNonQuery()
+            'En este caso la consulta que realizamos es de modificación de estructuras
+            ' por lo que debemos ejecutar el comando con la función "ExecuteNonQuery"
+            ' que permite ejecutar consultas que no involucran el manejo de datos sino
+            ' la modificación de la estructura de la BdD.
 
             'Manejo de errores de conexión
         Catch ex As Exception
             Console.WriteLine("No se ha podido conectar al servidor.")
+            Console.WriteLine("No se pudo crear la Base de Datos " & base)
             Console.WriteLine("-----------------------------------------------------")
             Console.WriteLine("Error: " & ex.ToString)
         End Try
 
         'Cerramos la conexión
         conexion.Close()
+
+
+        Console.WriteLine("-----------------------------------------------------")
+        Console.WriteLine("Presione ENTER para continuar")
+        Console.ReadLine()
+
+        'Forzamos un regreso a la pantalla principal
+        Main()
 
     End Sub
 

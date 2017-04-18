@@ -70,6 +70,15 @@ Module Module1
         'Si ejecutamos un comando "Console.ReadLine" sin asociarlo a ninguna variable
         ' podemos generar una pausa controlada por el usuario. De lo contrario la
         ' ventana se cerraría y no se podría ver el resultado.
+
+        Console.WriteLine("Ingrese un nombre para la BdD Nueva:")
+        Console.Write("Nombre:")
+        Dim nombreBD As String = ""
+        nombreBD = Console.ReadLine()
+        CrearBase(servidor, usuario, contrasenia, nombreBD)
+        nombreBD = Console.Read()
+
+
     End Sub
 
     'Subrutina para probar la conexión a la BdD
@@ -239,11 +248,47 @@ Module Module1
             Console.WriteLine("No se ha podido conectar al servidor.")
             Console.WriteLine("-----------------------------------------------------")
             Console.WriteLine("Error: " & ex.ToString)
+
         End Try
 
         'Cerramos la conexión
         conexion.Close()
 
     End Sub
+
+    Sub CrearBase(servidor As String, usuario As String, contrasenia As String, base As String)
+
+        'Inicializamos el objeto de conexión y le pasamos las credenciales de acceso
+        conexion = New MySqlConnection()
+        conexion.ConnectionString = "server='" & servidor & "';" &
+                                    "user=" & usuario & ";" &
+                                    "password=" & contrasenia & ";"
+
+        Try
+            'Abrimos la conexión
+            conexion.Open()
+            Console.WriteLine("Servidor: " & servidor)
+            Console.WriteLine("Creando la Base de Datos: " & base & ":")
+            Console.WriteLine("-----------------------------------------------------")
+
+            'Definimos la consulta, creamos el comando y lo ejecutamos con un lector
+            ' para obtener los datos
+            Dim consulta As String = "CREATE database " & base & ";"
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.ExecuteNonQuery()
+
+            'Manejo de errores de conexión
+        Catch ex As Exception
+            Console.WriteLine("No se ha podido conectar al servidor.")
+            Console.WriteLine("-----------------------------------------------------")
+            Console.WriteLine("Error: " & ex.ToString)
+        End Try
+
+        'Cerramos la conexión
+        conexion.Close()
+
+    End Sub
+
+
 End Module
 

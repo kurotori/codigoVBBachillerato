@@ -1,2 +1,10 @@
 D:\Drive\Proyectos\EjemplosDeCodigo\lector-base-de-datos-simple-consola\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe.config
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\bin\Debug\lector-base-de-datos-simple-consola.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\obj\Debug\lector_base_de_datos_simple_consola.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\obj\Debug\lector-base-de-datos-simple-consola.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\obj\Debug\lector-base-de-datos-simple-consola.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\obj\Debug\lector-base-de-datos-simple-consola.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VB-lector-base-de-datos-simple-consola-mysql\lector-base-de-datos-simple-consola\obj\Debug\lector-base-de-datos-simple-consola.pdb

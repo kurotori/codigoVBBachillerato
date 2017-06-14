@@ -1,0 +1,13 @@
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\bin\Debug\VentanasAuxiliares.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\bin\Debug\VentanasAuxiliares.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\bin\Debug\VentanasAuxiliares.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\bin\Debug\VentanasAuxiliares.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.Form1.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.Form2.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.Form3.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\VentanasAuxiliares\VentanasAuxiliares\obj\Debug\VentanasAuxiliares.vbprojResolveAssemblyReference.cache

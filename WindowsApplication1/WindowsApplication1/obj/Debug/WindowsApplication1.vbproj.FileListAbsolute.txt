@@ -1,0 +1,12 @@
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\bin\Debug\Module1.vb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache

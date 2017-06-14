@@ -1,0 +1,12 @@
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\bin\Debug\EjemploControlesDeVentana.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\bin\Debug\EjemploControlesDeVentana.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\bin\Debug\EjemploControlesDeVentana.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\bin\Debug\EjemploControlesDeVentana.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.Form1.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.vbprojResolveAssemblyReference.cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\EjemploControlesDeVentana\EjemploControlesDeVentana\obj\Debug\EjemploControlesDeVentana.Form2.resources

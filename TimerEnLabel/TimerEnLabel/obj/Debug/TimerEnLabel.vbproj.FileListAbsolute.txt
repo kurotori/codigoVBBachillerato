@@ -1,0 +1,10 @@
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\bin\Debug\TimerEnLabel.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\bin\Debug\TimerEnLabel.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\bin\Debug\TimerEnLabel.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\bin\Debug\TimerEnLabel.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.Form1.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\TimerEnLabel\TimerEnLabel\obj\Debug\TimerEnLabel.pdb

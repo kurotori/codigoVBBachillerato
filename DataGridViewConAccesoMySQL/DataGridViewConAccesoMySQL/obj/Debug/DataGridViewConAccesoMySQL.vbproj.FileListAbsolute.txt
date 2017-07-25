@@ -1,0 +1,12 @@
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\bin\Debug\DataGridViewConAccesoMySQL.exe.config
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\bin\Debug\DataGridViewConAccesoMySQL.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\bin\Debug\DataGridViewConAccesoMySQL.pdb
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\bin\Debug\DataGridViewConAccesoMySQL.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.vbprojResolveAssemblyReference.cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.Form1.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.Form2.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.Resources.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.vbproj.GenerateResource.Cache
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.exe
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.xml
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\DataGridViewConAccesoMySQL\DataGridViewConAccesoMySQL\obj\Debug\DataGridViewConAccesoMySQL.pdb

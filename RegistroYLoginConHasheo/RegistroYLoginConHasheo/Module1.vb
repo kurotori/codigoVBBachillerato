@@ -75,8 +75,8 @@ Module Module1
             comando.CommandText = sentencia
             'Añadimos los valores a los parámetros de la sentencia
             comando.Parameters.AddWithValue("@nombre", nomUsuario)
-            comando.Parameters.AddWithValue("@sal", hashContraseña)
-            comando.Parameters.AddWithValue("@hash", codigoSal)
+            comando.Parameters.AddWithValue("@hash", hashContraseña)
+            comando.Parameters.AddWithValue("@sal", codigoSal)
             'Finalmente, ejecutamos el comando
             comando.ExecuteNonQuery()
             exito = True

@@ -56,8 +56,8 @@ Module Module1
 
         conexion = CrearConexion(servidor, usuario, contrasenia)
 
-        Dim consulta1 As String = "SHOW DATABASES"
-        Dim comando As MySqlCommand = New MySqlCommand(consulta1, conexion)
+        Dim consulta As String = "SHOW DATABASES"
+        Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
 
         Try
             conexion.Open()

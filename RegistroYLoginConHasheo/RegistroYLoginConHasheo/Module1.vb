@@ -60,12 +60,27 @@ Module Module1
 
     Public Function NuevoUsuario(conexion As MySqlConnection,
                                  nomUsuario As String, hashContraseña As String, codigoSal As String) As Boolean
+        'Esta función permite crear un nuevo usuario, pero puede considerarse un modelo a seguir para
+        ' cualquier función pensada para guardar datos en una tabla de BdD.
+        ' Esta pensada para devolver un valor lógico y aprovechar eso para disparar eventos o mensajes
+        ' según si la conexión tuvo éxito o no.
+
+        'La variable 'exito' es la que contiene el valor que devuelve la función. Si no hay errores, pasa
+        ' a 'True', de lo contrario, ante un error, se mantiene en 'False'
         Dim exito As Boolean = False
 
         Dim comando As New MySqlCommand
 
-        Dim sentencia As String = "INSERT INTO login.usuarios(nombre,sal,hash) values" &
+        'Nuestra sentencia se rellena con elementos '@'.  Estos elementos son 
+        ' parámetros y más adelante (durante el Try) los rellenaremos con el método
+        ' 'Parameters.AddWithValue()' del objeto MySqlCommand.
+        ' El uso de parámetros en la consulta permite evitar la mayor parte de los 
+        ' ataques por inyección SQL, aumentando la seguridad de nuestro sistema.
+        Dim sentencia As String = "INSERT INTO prueba_login.usuarios(nombre,sal,hash) values" &
                                   "(@nombre,@sal,@hash)"
+        comando.Parameters.AddWithValue("@nombre", nomUsuario)
+        comando.Parameters.AddWithValue("@hash", hashContraseña)
+        comando.Parameters.AddWithValue("@sal", codigoSal)
         Try
             'Abrimos la conexión
             conexion.Open()
@@ -74,10 +89,12 @@ Module Module1
             comando.Connection = conexion
             comando.CommandText = sentencia
             'Añadimos los valores a los parámetros de la sentencia
-            comando.Parameters.AddWithValue("@nombre", nomUsuario)
-            comando.Parameters.AddWithValue("@hash", hashContraseña)
-            comando.Parameters.AddWithValue("@sal", codigoSal)
-            'Finalmente, ejecutamos el comando
+            'comando.Parameters.AddWithValue("@nombre", nomUsuario)
+            'comando.Parameters.AddWithValue("@hash", hashContraseña)
+            'comando.Parameters.AddWithValue("@sal", codigoSal)
+            'Finalmente, ejecutamos el comando mediante un 'ExecuteNonQuery'
+            ' este método de los objetos MySqlCommand permite ejecutar una sentencia SQL
+            ' que realice modificaciones en los datos o estructura de la BdD
             comando.ExecuteNonQuery()
             exito = True
         Catch ex As Exception
@@ -88,18 +105,50 @@ Module Module1
 
         'Al final de todo, cerramos la conexión
         conexion.Close()
-
         Return exito
-
     End Function
 
-    Function chequearDatosNuevoUsuario(nomUsuario As String, contra1 As String, contra2 As String) As Boolean
+
+    Function chequearDatosNuevoUsuario(conexion As MySqlConnection, nomUsuario As String,
+                                       contra1 As String, contra2 As String) As Boolean
+        'Semejante a la función para crear usuarios, esta función devuelve un valor Booleano para
+        ' aprovecharlo en el control de eventos y mensajes de acuerdo con el resultado de la misma
         Dim exito As Boolean = False
 
+        'El método .Length devuelve la cantidad de caracteres de un String y lo aprovechamos para
+        ' comprobar si el nombre de usuario tiene el largo adecuado.
         If nomUsuario.Length > 7 Then
+            'Si el nombre de usuario es correcto comprobamos lo mismo con la contraseña
             If contra1.Length > 7 Then
+                'Si la longitud de la contraseña es la correcta, chequeamos que sea igual a la
+                ' confirmación. Para eso utilizamos el método '.Compare()' que compara dos
+                ' variables de tipo String.
                 If String.Compare(contra1, contra2) = 0 Then
-                    exito = True
+
+                    'Finalmente, si se aprueban todos los chequeos locales, pasamos al chequeo con el
+                    ' servidor de BdD. Para hacerlo realizamos una consulta de nombres a la tabla.
+                    Dim consulta As String = "SELECT nombre FROM prueba_login.usuarios WHERE nombre=@nombre"
+                    Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+                    comando.Parameters.AddWithValue("@nombre", nomUsuario)
+
+                    Try
+                        conexion.Open()
+                        Dim lector As MySqlDataReader = comando.ExecuteReader()
+                        If lector.HasRows Then
+                            'Si el lector tiene algún resultado, entonces el usuario ya existe y
+                            ' por lo tanto la función debe devolver False
+                            exito = False
+                            MsgBox("Este nombre de usuario ya fue registrado")
+                        Else
+                            'Si no hay resultados, entonces los datos de usuario han superado todas
+                            ' las pruebas y se puede registrar al usuario
+                            exito = True
+                        End If
+                    Catch ex As Exception
+                        MessageBox.Show("No se ha podido conectar al servidor")
+                        MessageBox.Show("Error:" & ex.ToString)
+                    End Try
+                    conexion.Close()
                 Else
                     MsgBox("Las contraseñas NO son iguales")
                 End If
@@ -109,6 +158,56 @@ Module Module1
         Else
             MsgBox("El nombre de usuario debe tener al menos 8 caracteres")
         End If
+        Return exito
+    End Function
+
+    Public Function LoguearUsuario(conexion As MySqlConnection, nomUsuario As String, contrasenia As String)
+        Dim exito As Boolean = False
+        Dim sal As String = ""
+        Dim hashContrasenia As String = ""
+        Dim clave As String = ""
+
+        Try
+            'Abrimos la conexion
+            conexion.Open()
+
+            'Creamos la consulta
+            Dim consulta As String = "SELECT sal,contrasenia FROM prueba_login.usuarios WHERE nomUsuario LIKE '" &
+                                        nomUsuario & "'"
+
+            'Creamos el comando que ejecutará el lector y le agregamos la consulta
+            ' y los datos de conexión
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+
+            'Creamos el objeto lector que contendrá los datos de la consulta
+            Dim lector As MySqlDataReader = comando.ExecuteReader()
+            'Si se obtuvieron datos, se reparten los datos a las variables
+            If lector.HasRows Then
+                'NO DEBERÍA HABER MÁS QUE UN REGISTRO POR NOMBRE DE USUARIO, por eso
+                ' el While solo debería realizar un bucle, de lo contrario tendríamos errores
+                While lector.Read()
+                    'Obtenemos los datos de cada campo en el tipo que los queremos
+                    sal = lector.GetString(0)
+                    hashContrasenia = lector.GetString(1)
+                End While
+                'Regeneramos el hash de la contraseña con la sal obtenida
+                clave = CodificarContraseña(contrasenia, sal)
+                'Y comparamos los dos hasheos. Si la contraseña es la misma, el hash tambien
+                If clave.Equals(hashContrasenia) Then
+                    exito = True
+                    MessageBox.Show("Bienvenido, " & nomUsuario)
+                Else
+                    MessageBox.Show("La contraseña es incorrecta. Intente de nuevo")
+                End If
+            Else
+                MessageBox.Show("Este usuario no existe. ¿Escribió bien el nombre de usuario?")
+            End If
+            conexion.Close()
+        Catch ex As Exception
+            MessageBox.Show("No se ha podido conectar al servidor")
+            MessageBox.Show("Error:" & ex.ToString)
+        End Try
+
         Return exito
     End Function
 

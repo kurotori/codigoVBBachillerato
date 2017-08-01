@@ -210,9 +210,43 @@ Module Module1
         Return exito
     End Function
 
-    Function CrearClaveSesion(conexion, usuario) As String
+    Function CrearClaveSesion(conexion, nomUsuario) As String
         Dim clave As String = vbNullString
+        Dim claveTemp As String = ""
+        Dim sal As String = CrearSal()
 
+        Dim marcatiempo As String = CLng(DateTime.UtcNow.Subtract(New DateTime(1970, 1, 1)).
+                                    TotalMilliseconds)
+
+        claveTemp = CodificarContraseña(marcatiempo, sal)
+
+        Dim comando As New MySqlCommand
+
+        Dim sentencia As String = "INSERT INTO prueba_login.sesion(nombre,clave) values" &
+                                  "(@nombre,@sal,@hash)"
+        comando.Parameters.AddWithValue("@nombre", nomUsuario)
+        comando.Parameters.AddWithValue("@clave", claveTemp)
+        Try
+            'Abrimos la conexión
+            conexion.Open()
+            'Añadimos al objeto de comando la conexión a la BdD
+            'y la sentencia que hicimos antes
+            comando.Connection = conexion
+            comando.CommandText = sentencia
+            'Añadimos los valores a los parámetros de la sentencia
+            'Finalmente, ejecutamos el comando mediante un 'ExecuteNonQuery'
+            ' este método de los objetos MySqlCommand permite ejecutar una sentencia SQL
+            ' que realice modificaciones en los datos o estructura de la BdD
+            comando.ExecuteNonQuery()
+            clave = claveTemp
+        Catch ex As Exception
+            'En caso de errores, mostramos un aviso y el error en pantalla"
+            MessageBox.Show("No se pudo crear la sesión")
+            MessageBox.Show("Error: " & ex.ToString)
+        End Try
+
+        'Al final de todo, cerramos la conexión
+        conexion.Close()
 
         Return clave
     End Function

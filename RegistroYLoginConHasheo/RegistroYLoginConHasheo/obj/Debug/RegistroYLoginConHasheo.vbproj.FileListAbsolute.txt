@@ -9,3 +9,4 @@ D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroYLoginConHasheo\RegistroYLog
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroYLoginConHasheo\RegistroYLoginConHasheo\obj\Debug\RegistroYLoginConHasheo.xml
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroYLoginConHasheo\RegistroYLoginConHasheo\obj\Debug\RegistroYLoginConHasheo.pdb
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroYLoginConHasheo\RegistroYLoginConHasheo\obj\Debug\RegistroYLoginConHasheo.Form2.resources
+D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroYLoginConHasheo\RegistroYLoginConHasheo\obj\Debug\RegistroYLoginConHasheo.Form3.resources

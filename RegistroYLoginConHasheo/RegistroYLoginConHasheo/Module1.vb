@@ -161,7 +161,7 @@ Module Module1
         Return exito
     End Function
 
-    Public Function LoguearUsuario(conexion As MySqlConnection, nomUsuario As String, contrasenia As String)
+    Public Function LoguearUsuario(conexion As MySqlConnection, nomUsuario As String, contrasenia As String) As Boolean
         Dim exito As Boolean = False
         Dim sal As String = ""
         Dim hashContrasenia As String = ""
@@ -172,12 +172,11 @@ Module Module1
             conexion.Open()
 
             'Creamos la consulta
-            Dim consulta As String = "SELECT sal,contrasenia FROM prueba_login.usuarios WHERE nomUsuario LIKE '" &
-                                        nomUsuario & "'"
-
+            Dim consulta As String = "SELECT sal,hash FROM prueba_login.usuarios WHERE nombre = @nombre"
             'Creamos el comando que ejecutará el lector y le agregamos la consulta
             ' y los datos de conexión
             Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@nombre", nomUsuario)
 
             'Creamos el objeto lector que contendrá los datos de la consulta
             Dim lector As MySqlDataReader = comando.ExecuteReader()
@@ -209,6 +208,13 @@ Module Module1
         End Try
 
         Return exito
+    End Function
+
+    Function CrearClaveSesion(conexion, usuario) As String
+        Dim clave As String = vbNullString
+
+
+        Return clave
     End Function
 
 End Module

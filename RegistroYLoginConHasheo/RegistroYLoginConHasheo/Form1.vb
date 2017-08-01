@@ -20,6 +20,8 @@ Public Class Form1
 
             If NuevoUsuario(conexion, nomUsuario, hashContraseña, sal) Then
                 MsgBox("El usuario " & nomUsuario & " se creó exitosamente")
+                Form2.Show()
+                Me.Close()
             Else
                 MsgBox("No se pudo crear un nuevo usuario")
             End If
@@ -30,5 +32,10 @@ Public Class Form1
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
+        Form3.Show()
+    End Sub
+
+    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Form3.Show()
     End Sub
 End Class

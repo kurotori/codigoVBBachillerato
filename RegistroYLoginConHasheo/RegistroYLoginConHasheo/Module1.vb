@@ -161,7 +161,8 @@ Module Module1
         Return exito
     End Function
 
-    Public Function LoguearUsuario(conexion As MySqlConnection, nomUsuario As String, contrasenia As String) As Boolean
+    Public Function LoguearUsuario(conexion As MySqlConnection, nomUsuario As String,
+                                   contrasenia As String) As Boolean
         Dim exito As Boolean = False
         Dim sal As String = ""
         Dim hashContrasenia As String = ""
@@ -223,7 +224,7 @@ Module Module1
         Dim comando As New MySqlCommand
 
         Dim sentencia As String = "INSERT INTO prueba_login.sesion(nombre,clave) values" &
-                                  "(@nombre,@sal,@hash)"
+                                  "(@nombre,@clave)"
         comando.Parameters.AddWithValue("@nombre", nomUsuario)
         comando.Parameters.AddWithValue("@clave", claveTemp)
         Try

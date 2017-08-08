@@ -216,25 +216,32 @@ Module Module1
         Dim claveTemp As String = ""
         Dim sal As String = CrearSal()
 
-        Dim marcatiempo As String = CLng(DateTime.UtcNow.Subtract(New DateTime(1970, 1, 1)).
-                                    TotalMilliseconds)
+        'Dim marcatiempo As String = CLng(DateTime.UtcNow.Subtract(New DateTime(1970, 1, 1)).
+        '                           TotalMilliseconds)
+        Dim tiempo As DateTime = DateTime.Now
+        Dim formatoTiempo As String = "yyyy-MM-dd HH:mm:ss"
+        Dim marcatiempo As String = tiempo.ToString(formatoTiempo)
 
+
+        MsgBox(marcatiempo)
         claveTemp = CodificarContraseña(marcatiempo, sal)
 
         Dim comando As New MySqlCommand
 
-        Dim sentencia As String = "INSERT INTO prueba_login.sesion(nombre,clave) values" &
+        Dim sentencia As String = "INSERT INTO prueba_login.sesiones(nombre,clave) values" &
                                   "(@nombre,@clave)"
+
+        'Añadimos los valores a los parámetros de la sentencia
+        comando.CommandText = sentencia
         comando.Parameters.AddWithValue("@nombre", nomUsuario)
         comando.Parameters.AddWithValue("@clave", claveTemp)
+
         Try
             'Abrimos la conexión
             conexion.Open()
             'Añadimos al objeto de comando la conexión a la BdD
             'y la sentencia que hicimos antes
             comando.Connection = conexion
-            comando.CommandText = sentencia
-            'Añadimos los valores a los parámetros de la sentencia
             'Finalmente, ejecutamos el comando mediante un 'ExecuteNonQuery'
             ' este método de los objetos MySqlCommand permite ejecutar una sentencia SQL
             ' que realice modificaciones en los datos o estructura de la BdD

@@ -18,6 +18,8 @@ Public Class Form2
             'En esta zona deberían estar las acciones relacionadas con el inicio de sesión
             ' como ser un acceso al registro de actividades para la auditoría
             MsgBox("Inicio de Sesión Exitoso")
+            MsgBox(CrearClaveSesion(conexion, usuario))
+
         Else
             MsgBox("No se pudo iniciar sesión")
         End If

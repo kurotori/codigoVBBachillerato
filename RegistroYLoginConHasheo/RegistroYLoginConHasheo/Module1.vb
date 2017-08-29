@@ -212,10 +212,15 @@ Module Module1
     End Function
 
     Function CrearClaveSesion(conexion, nomUsuario) As String
+        'Esta función no requiere la contraseña del usuario porque asume que solo se usará una vez
+        ' que se ejecutó con éxito la función LoguearUsuario, por lo que la autenticación ya fue
+        ' realizada.
         Dim clave As String = vbNullString
-        Dim claveTemp As String = ""
+        Dim claveTemp As String = vbNullString
+        'vbNullString es un valor predefinido en el lenguaje que equivale a un String
+        ' de longitud cero, sin caracteres.
         Dim sal As String = CrearSal()
-
+        'Creamos una sal especialmente para esta sesión
         'Dim marcatiempo As String = CLng(DateTime.UtcNow.Subtract(New DateTime(1970, 1, 1)).
         '                           TotalMilliseconds)
         Dim tiempo As DateTime = DateTime.Now

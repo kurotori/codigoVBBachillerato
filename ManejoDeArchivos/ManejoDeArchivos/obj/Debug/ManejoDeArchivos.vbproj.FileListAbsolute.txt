@@ -1,0 +1,12 @@
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.exe.config
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.exe
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.pdb
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.xml
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbprojAssemblyReference.cache
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.Form1.resources
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.Resources.resources
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbproj.GenerateResource.cache
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.exe
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.xml
+C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.pdb

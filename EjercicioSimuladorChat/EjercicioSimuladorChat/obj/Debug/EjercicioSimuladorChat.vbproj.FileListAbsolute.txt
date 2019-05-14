@@ -1,0 +1,12 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\bin\Debug\EjercicioSimuladorChat.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\bin\Debug\EjercicioSimuladorChat.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\bin\Debug\EjercicioSimuladorChat.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\bin\Debug\EjercicioSimuladorChat.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.Form1.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\EjercicioSimuladorChat\EjercicioSimuladorChat\obj\Debug\EjercicioSimuladorChat.pdb

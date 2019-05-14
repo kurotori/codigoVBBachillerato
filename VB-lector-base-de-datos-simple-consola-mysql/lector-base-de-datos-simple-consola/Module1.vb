@@ -7,7 +7,7 @@
 
 Module Module1
     'Declaración de variables
-    Friend conexion As MySqlConnection
+    Friend conexion As New MySqlConnection
     'La variable "conexion" es un objeto que se encargará de las tareas de
     ' interacción con la BdD úsando la funcionalidad del conector ODBC que
     ' agregamos al incluir la librería.
@@ -86,14 +86,15 @@ Module Module1
         'Inicializamos el objeto "conexion" y le asignamos los datos de acceso al
         ' servidor de MySQL
         conexion = New MySqlConnection()
-        conexion.ConnectionString = "server='" & servidor & "';" &
+        Try
+            conexion.ConnectionString = "server='" & servidor & "';" &
                                     "user=" & usuario & ";" &
                                     "password=" & contrasenia & ";"
-        'La función "ConnectionString" permite agregarle al objeto de conexión
-        ' los datos de autenticación necesarios
+            'La función "ConnectionString" permite agregarle al objeto de conexión
+            ' los datos de autenticación necesarios
 
-        'Ejecución de la conexión al servidor de MySQL
-        Try
+            'Ejecución de la conexión al servidor de MySQL
+
             'La estructura "Try/Catch" es utilizada en casos en que necesitamos llevar
             ' a cabo una tarea que puede fallar por causas externas al código, como ser
             ' acceso a servidores remotos, uso de recursos de red, lectura/escritura de
@@ -119,7 +120,7 @@ Module Module1
             Console.WriteLine("-----------------------------------------------------")
 
             'Mostramos el detalle del error en pantalla
-            Console.WriteLine("Error: " & ex.ToString)
+            Console.WriteLine("Error: " & ex.Message)
             'Para mostrar el detalle del error debemos pasar el contenido del objeto "ex"
             ' a String, por lo que usamos la función "ToString". El objeto "ex" posée más
             ' funciones importantes para el manejo de mensajes de error.
@@ -143,13 +144,14 @@ Module Module1
 
         'Inicializamos el objeto "conexion" y le asignamos los datos de acceso al
         ' servidor de MySQL
-        conexion = New MySqlConnection()
-        conexion.ConnectionString = "server='" & servidor & "';" &
+        Try
+            conexion = New MySqlConnection()
+            conexion.ConnectionString = "server='" & servidor & "';" &
                                     "user=" & usuario & ";" &
                                     "password=" & contrasenia & ";"
 
-        'Ejecución de la conexión al servidor de MySQL
-        Try
+            'Ejecución de la conexión al servidor de MySQL
+
             conexion.Open()
             Console.WriteLine("Mostrando Bases de Datos Disponibles en " & servidor & ":")
             Console.WriteLine("-----------------------------------------------------")

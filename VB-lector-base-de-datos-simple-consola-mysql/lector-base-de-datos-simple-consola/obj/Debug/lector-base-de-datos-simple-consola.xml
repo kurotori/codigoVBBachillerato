@@ -22,5 +22,30 @@ lector-base-de-datos-simple-consola
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="M:lector_base_de_datos_simple_consola.BaseDeDatos.ConectarAServidor(System.String,System.String,System.String)">
+ <summary>
+ Subrutina para establecer la conexión al servidor de bases de datos
+ </summary>
+ <param name="servidor">La URL o el IP del servidor</param>
+ <param name="usuario">El nombre de usuario para conectarse a la BdD</param>
+ <param name="contrasenia">La contrasenia para conectarse a la BdD</param>
+</member>
+<member name="M:lector_base_de_datos_simple_consola.BaseDeDatos.VerBases(System.String,System.String,System.String)">
+ <summary>
+ Subrutina para obtener el listado de BdD's en el servidor MySQL
+ </summary>
+ <param name="servidor"></param>
+ <param name="usuario"></param>
+ <param name="contrasenia"></param>
+</member>
+<member name="M:lector_base_de_datos_simple_consola.BaseDeDatos.VerTablas(System.String,System.String,System.String,System.String)">
+ <summary>
+ Permite obtener información sobre las tablas de una base de datos
+ </summary>
+ <param name="servidor"></param>
+ <param name="usuario"></param>
+ <param name="contrasenia"></param>
+ <param name="base"></param>
+</member>
 </members>
 </doc>

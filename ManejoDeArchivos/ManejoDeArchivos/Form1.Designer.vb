@@ -27,14 +27,16 @@ Partial Class Form1
         Me.txtbx_texto = New System.Windows.Forms.TextBox()
         Me.dlg_abrirArch = New System.Windows.Forms.OpenFileDialog()
         Me.dlg_guardArch = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'bt_guardar
         '
         Me.bt_guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_guardar.Location = New System.Drawing.Point(12, 398)
+        Me.bt_guardar.Location = New System.Drawing.Point(9, 323)
+        Me.bt_guardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.bt_guardar.Name = "bt_guardar"
-        Me.bt_guardar.Size = New System.Drawing.Size(162, 40)
+        Me.bt_guardar.Size = New System.Drawing.Size(122, 32)
         Me.bt_guardar.TabIndex = 0
         Me.bt_guardar.Text = "Guardar"
         Me.bt_guardar.UseVisualStyleBackColor = True
@@ -42,34 +44,41 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(439, 398)
+        Me.Button2.Location = New System.Drawing.Point(329, 323)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(162, 40)
+        Me.Button2.Size = New System.Drawing.Size(122, 32)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Abrir"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'txtbx_texto
         '
-        Me.txtbx_texto.Location = New System.Drawing.Point(12, 12)
+        Me.txtbx_texto.Location = New System.Drawing.Point(9, 10)
+        Me.txtbx_texto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtbx_texto.Multiline = True
         Me.txtbx_texto.Name = "txtbx_texto"
         Me.txtbx_texto.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtbx_texto.Size = New System.Drawing.Size(589, 380)
+        Me.txtbx_texto.Size = New System.Drawing.Size(443, 310)
         Me.txtbx_texto.TabIndex = 2
         '
         'dlg_abrirArch
         '
         Me.dlg_abrirArch.FileName = "OpenFileDialog1"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(613, 450)
+        Me.ClientSize = New System.Drawing.Size(460, 366)
         Me.Controls.Add(Me.txtbx_texto)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.bt_guardar)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -82,4 +91,5 @@ Partial Class Form1
     Friend WithEvents txtbx_texto As TextBox
     Friend WithEvents dlg_abrirArch As OpenFileDialog
     Friend WithEvents dlg_guardArch As SaveFileDialog
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

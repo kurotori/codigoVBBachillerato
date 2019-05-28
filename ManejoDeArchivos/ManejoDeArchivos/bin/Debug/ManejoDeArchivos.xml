@@ -22,5 +22,28 @@ ManejoDeArchivos
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:ManejoDeArchivos.Archivo">
+ <summary>
+ Este módulo permite manejar de forma sencilla archivos de texto plano
+ Autor: Sebastián de los Ángeles
+ </summary>
+</member>
+<member name="M:ManejoDeArchivos.Archivo.AgregarDatosArchivo(System.String,System.String)">
+ <summary>
+ Permite crear o modificar un archivo de texto existente
+ </summary>
+ <param name="datos">Los datos que deben agregarse al archivo</param>
+ <param name="ruta">La ruta de acceso al archivo</param>
+ 
+</member>
+<member name="M:ManejoDeArchivos.Archivo.LeerDatosArchivo(System.String)">
+ <summary>
+ Permite leer los datos de un archivo de texto existente y guardarlos en una
+ variable de tipo String
+ </summary>
+ <param name="ruta">La ruta de acceso al archivo</param>
+ <returns></returns>
+ 
+</member>
 </members>
 </doc>

@@ -10,3 +10,15 @@ C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\Mane
 C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.exe
 C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.xml
 C:\Users\Sebastian\source\repos\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.pdb
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.exe.config
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.pdb
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\bin\Debug\ManejoDeArchivos.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbprojAssemblyReference.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.Form1.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.Resources.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbproj.GenerateResource.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.vbproj.CoreCompileInputs.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\ManejoDeArchivos\ManejoDeArchivos\obj\Debug\ManejoDeArchivos.pdb

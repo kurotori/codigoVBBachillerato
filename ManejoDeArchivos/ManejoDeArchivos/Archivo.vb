@@ -13,6 +13,7 @@ Module Archivo
     ''' </summary>
     ''' <param name="datos">Los datos que deben agregarse al archivo</param>
     ''' <param name="ruta">La ruta de acceso al archivo</param>
+    ''' 
     Sub AgregarDatosArchivo(datos As String, ruta As String)
         Dim info As Byte() = New UTF8Encoding(True).GetBytes(datos)
         Dim flujoDatos As FileStream = File.OpenWrite(ruta)
@@ -27,8 +28,10 @@ Module Archivo
     ''' </summary>
     ''' <param name="ruta">La ruta de acceso al archivo</param>
     ''' <returns></returns>
+    ''' 
     Function LeerDatosArchivo(ruta As String) As String
-        Dim datos As String = My.Computer.FileSystem.ReadAllText(ruta)
+        Dim datos As String = ""
+        datos = My.Computer.FileSystem.ReadAllText(ruta)
         Return datos
     End Function
 

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ManejoDeString
+</name>
+</assembly>
+<members>
+<member name="T:ManejoDeString.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ManejoDeString.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ManejoDeString.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ManejoDeString.ManejoDeString">
+ <summary>
+ Este módulo contiene Métodos para explicar el uso de listas de tipo String y 
+ algunas funciones de manejo de variables de tipo String
+ 
+ </summary>
+</member>
+<member name="M:ManejoDeString.ManejoDeString.EjemploDeLista">
+Listas en VB .net
+  Las listas en VB .net se declaran usando paréntesis "()" en lugar de 
+  corchetes "[]", como en otros lenguajes. Por lo demás el manejo es muy
+  similar al de otras variables.
+</member>
+<member name="M:ManejoDeString.ManejoDeString.SepararTexto(System.String,System.Char)">
+ <summary>
+ Esta función tiene el propósito de simplificar el manejo de la función Split
+ la cual permite separar un texto en partes según un separador y almacenar
+ esas partes en una lista de tipo String
+ </summary>
+ <param name="texto">El texto a separar en partes</param>
+ <param name="separador">El caracter separador</param>
+ <returns></returns>
+</member>
+</members>
+</doc>

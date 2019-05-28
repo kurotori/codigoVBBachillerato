@@ -1,0 +1,12 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\bin\Debug\ManejoDeString.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\bin\Debug\ManejoDeString.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\bin\Debug\ManejoDeString.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\bin\Debug\ManejoDeString.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.Form1.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ManejoDeString\ManejoDeString\obj\Debug\ManejoDeString.pdb

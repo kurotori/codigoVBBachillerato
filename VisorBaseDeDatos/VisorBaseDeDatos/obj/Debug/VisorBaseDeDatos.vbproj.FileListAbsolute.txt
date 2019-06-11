@@ -1,0 +1,16 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\VisorBaseDeDatos.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\VisorBaseDeDatos.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\VisorBaseDeDatos.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\VisorBaseDeDatos.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\MySql.Data.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\Google.Protobuf.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\bin\Debug\MySql.Data.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.Form1.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.vbproj.CopyComplete
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\VisorBaseDeDatos\VisorBaseDeDatos\obj\Debug\VisorBaseDeDatos.pdb

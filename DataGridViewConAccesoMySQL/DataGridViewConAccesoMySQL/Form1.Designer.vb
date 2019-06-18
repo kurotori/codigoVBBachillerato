@@ -52,6 +52,7 @@ Partial Class Form1
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(144, 20)
         Me.TextBox4.TabIndex = 3
+        Me.TextBox4.UseSystemPasswordChar = True
         '
         'Label1
         '

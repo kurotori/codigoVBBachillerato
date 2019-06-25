@@ -15,7 +15,7 @@ Module Archivo
     ''' <param name="ruta">La ruta de acceso al archivo</param>
     ''' 
     Sub AgregarDatosArchivo(datos As String, ruta As String)
-        Dim info As Byte() = New UTF8Encoding(True).GetBytes(datos)
+        Dim info() As Byte = New UTF8Encoding(True).GetBytes(datos)
         Dim flujoDatos As FileStream = File.OpenWrite(ruta)
         flujoDatos.Write(info, 0, info.Length)
         flujoDatos.Close()

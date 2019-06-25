@@ -13,4 +13,11 @@ Public Class Form1
         conexion = CrearConexion(TextBox1.Text, TextBox2.Text, TextBox3.Text)
         VerTablas(conexion, base, ComboBox2)
     End Sub
+
+    Private Sub ComboBox2_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles ComboBox2.SelectionChangeCommitted
+        Dim base As String = ComboBox1.SelectedItem
+        Dim tabla As String = ComboBox2.SelectedItem
+        conexion = CrearConexion(TextBox1.Text, TextBox2.Text, TextBox3.Text)
+        VerCampos(conexion, base, tabla, ListBox1)
+    End Sub
 End Class

@@ -21,12 +21,15 @@ Module Module1
     'CrearConexion() es una función que permite preparar el objeto conexion con las credenciales del
     '   servidor de BdD. Para ejecutarse se le debe proveer las credenciales mediante los parámetros
     '   'servidor', 'usuario' y 'contrasenia'
-    Function CrearConexion(servidor As String, usuario As String, contrasenia As String) As MySqlConnection
+
+    Function CrearConexion(servidor As String,
+                           usuario As String,
+                           contrasenia As String) As MySqlConnection
         'Creamos un objeto de tipo MySqlConnection llamado "conexion", que será el que obtendremos al final
         Dim conexion As New MySqlConnection
-        '       --> La orden 'New' indica que el objeto debe inicializarse como un objeto nuevo y "vacío"
+        '    --> La orden 'New' indica que el objeto debe inicializarse como un objeto nuevo 
 
-        'Modificaremos el atributo 'ConnectionString' de nuestro objeto conexion el cual contendrá las 
+        '   Modificaremos el atributo 'ConnectionString' de nuestro objeto conexion el cual contendrá las 
         '   credenciales necesarias para establecer la conexión al servidor. Para ello tomaremos los datos
         '   provistos al inicio de la función.
         conexion.ConnectionString = "server=" & servidor & ";" &
@@ -36,7 +39,7 @@ Module Module1
         Return conexion
     End Function
 
-    Sub ConectarBdD(servidor As String, usuario As String, contrasenia As String)
+    Sub ChequearConexion(servidor As String, usuario As String, contrasenia As String)
         Dim conexion As New MySqlConnection
         conexion = CrearConexion(servidor, usuario, contrasenia)
 
@@ -50,11 +53,8 @@ Module Module1
         conexion.Close()
     End Sub
 
-    Function VerBasesDeDatos(servidor As String, usuario As String, contrasenia As String) As DataTable
+    Function VerBasesDeDatos(conexion As MySqlConnection) As DataTable
         Dim tablaDatos As New DataTable
-        Dim conexion As New MySqlConnection
-
-        conexion = CrearConexion(servidor, usuario, contrasenia)
 
         Dim consulta As String = "SHOW DATABASES"
         Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
@@ -85,11 +85,8 @@ Module Module1
         Return tablaDatos
     End Function
 
-    Function VerDatos(servidor As String, usuario As String, contrasenia As String) As DataTable
+    Function VerDatos(conexion As MySqlConnection) As DataTable
         Dim tablaDatos As New DataTable
-        Dim conexion As New MySqlConnection
-
-        conexion = CrearConexion(servidor, usuario, contrasenia)
 
         Dim consulta As String = "SELECT * FROM mysql.user"
         Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
@@ -98,11 +95,16 @@ Module Module1
             conexion.Open()
             Dim lector As MySqlDataReader = comando.ExecuteReader()
             If lector.HasRows Then
-                Dim nombresColumnas As String() = {lector.GetName(0), lector.GetName(1)}
 
-                For item = 1 To nombresColumnas.Length
+                Dim nombresColumnas(lector.FieldCount()) As String
+
+                For item As Integer = 0 To item < lector.FieldCount()
+                    nombresColumnas(item) = lector.GetString(item)
+                Next
+
+                For Each nombre As String In nombresColumnas
                     Dim columna As New DataColumn
-                    columna.ColumnName = nombresColumnas(item - 1)
+                    columna.ColumnName = nombre
                     tablaDatos.Columns.Add(columna)
                 Next
 

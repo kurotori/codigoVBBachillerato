@@ -1,0 +1,16 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\IngresoYLecturaMySQL.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\IngresoYLecturaMySQL.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\IngresoYLecturaMySQL.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\IngresoYLecturaMySQL.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\MySql.Data.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\Google.Protobuf.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\bin\Debug\MySql.Data.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.Form1.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.vbproj.CopyComplete
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\IngresoYLecturaMySQL\IngresoYLecturaMySQL\obj\Debug\IngresoYLecturaMySQL.pdb

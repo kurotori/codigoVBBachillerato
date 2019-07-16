@@ -25,3 +25,14 @@ D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroLoginHasheoConINI - copia\Re
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroLoginHasheoConINI - copia\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.VentanaInicio.resources
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroLoginHasheoConINI - copia\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.DatosBdD.resources
 D:\Drive\Proyectos\Ejemplos-de-Programaci-n\RegistroLoginHasheoConINI - copia\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.CrearNuevoUsuario.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.CrearNuevoUsuario.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.Login.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.VentanaInicio.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.DatosBdD.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\RegistroLoginHasheoConINI\RegistroLoginHasheoConINI\obj\Debug\RegistroLoginHasheoConINI.pdb

@@ -18,10 +18,8 @@ Module ManejoUsuarios
         'Objeto constructor del String de la sal
         Dim constructor As New StringBuilder
 
-        'Comenzamos a construir la sal
+        'Comenzamos a construir una sal de 100 caracteres
         For i As Integer = 1 To 100
-            '100 es la cantidad de caracteres que tendrá nuestra sal
-
             'Elegimos un caracter al azar de los caracteres de la base...
             Dim numCaracter As Integer = azar.Next(0, baseSal.Length - 1)
             Dim caracter = (baseSal.Substring(numCaracter, 1))

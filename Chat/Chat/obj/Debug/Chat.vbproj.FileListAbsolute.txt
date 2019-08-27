@@ -1,0 +1,12 @@
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\bin\Debug\Chat.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\bin\Debug\Chat.pdb
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\bin\Debug\Chat.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.vbprojAssemblyReference.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.Form1.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.Resources.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.vbproj.GenerateResource.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.vbproj.CoreCompileInputs.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.pdb

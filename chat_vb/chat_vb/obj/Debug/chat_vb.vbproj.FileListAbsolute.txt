@@ -1,0 +1,12 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\bin\Debug\chat_vb.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\bin\Debug\chat_vb.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\bin\Debug\chat_vb.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\bin\Debug\chat_vb.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.Ventana_chat.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\chat_vb\chat_vb\obj\Debug\chat_vb.pdb

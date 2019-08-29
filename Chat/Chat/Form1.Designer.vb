@@ -32,30 +32,27 @@ Partial Class Form1
         '
         'Txtbx_mensajes
         '
-        Me.Txtbx_mensajes.Location = New System.Drawing.Point(25, 57)
-        Me.Txtbx_mensajes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtbx_mensajes.Location = New System.Drawing.Point(19, 46)
         Me.Txtbx_mensajes.Multiline = True
         Me.Txtbx_mensajes.Name = "Txtbx_mensajes"
         Me.Txtbx_mensajes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Txtbx_mensajes.Size = New System.Drawing.Size(608, 278)
+        Me.Txtbx_mensajes.Size = New System.Drawing.Size(457, 227)
         Me.Txtbx_mensajes.TabIndex = 0
         '
         'Txtbx_mensaje_enviar
         '
-        Me.Txtbx_mensaje_enviar.Location = New System.Drawing.Point(25, 343)
-        Me.Txtbx_mensaje_enviar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtbx_mensaje_enviar.Location = New System.Drawing.Point(19, 279)
         Me.Txtbx_mensaje_enviar.Multiline = True
         Me.Txtbx_mensaje_enviar.Name = "Txtbx_mensaje_enviar"
-        Me.Txtbx_mensaje_enviar.Size = New System.Drawing.Size(473, 106)
+        Me.Txtbx_mensaje_enviar.Size = New System.Drawing.Size(356, 87)
         Me.Txtbx_mensaje_enviar.TabIndex = 1
         '
         'Btn_enviar
         '
         Me.Btn_enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_enviar.Location = New System.Drawing.Point(508, 343)
-        Me.Btn_enviar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Btn_enviar.Location = New System.Drawing.Point(381, 279)
         Me.Btn_enviar.Name = "Btn_enviar"
-        Me.Btn_enviar.Size = New System.Drawing.Size(125, 106)
+        Me.Btn_enviar.Size = New System.Drawing.Size(94, 86)
         Me.Btn_enviar.TabIndex = 2
         Me.Btn_enviar.Text = "Enviar"
         Me.Btn_enviar.UseVisualStyleBackColor = True
@@ -64,10 +61,9 @@ Partial Class Form1
         '
         Me.Lbl_usuario_rec.AutoSize = True
         Me.Lbl_usuario_rec.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_usuario_rec.Location = New System.Drawing.Point(17, 11)
-        Me.Lbl_usuario_rec.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lbl_usuario_rec.Location = New System.Drawing.Point(13, 9)
         Me.Lbl_usuario_rec.Name = "Lbl_usuario_rec"
-        Me.Lbl_usuario_rec.Size = New System.Drawing.Size(182, 39)
+        Me.Lbl_usuario_rec.Size = New System.Drawing.Size(147, 31)
         Me.Lbl_usuario_rec.TabIndex = 3
         Me.Lbl_usuario_rec.Text = "_Usuario_"
         '
@@ -76,14 +72,13 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(660, 465)
+        Me.ClientSize = New System.Drawing.Size(495, 378)
         Me.Controls.Add(Me.Lbl_usuario_rec)
         Me.Controls.Add(Me.Btn_enviar)
         Me.Controls.Add(Me.Txtbx_mensaje_enviar)
         Me.Controls.Add(Me.Txtbx_mensajes)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)

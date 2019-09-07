@@ -1,7 +1,21 @@
-﻿Public Class Form1
+﻿Public Class Chat
 
-    Dim usuario As String = "Yo"
+    Dim usuario1 As String = "Yo"
     Dim usuario2 As String = "Usuario2"
+    Dim ci_usuario1 As String
+    Dim ci_usuario2 As String
+
+    Public Sub New(ci_usuario1 As String, ci_usuario2 As String)
+
+        ' Esta llamada es exigida por el diseñador.
+        InitializeComponent()
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+        Me.ci_usuario1 = ci_usuario1
+        Me.ci_usuario2 = ci_usuario2
+
+        usuario2 = VerNombre(ci_usuario2)
+        Lbl_usuario_rec.Text = usuario2
+    End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Tiempo.Interval = 5000
@@ -32,7 +46,7 @@
 
         Dim tiempo As String = MarcaDeTiempo()
 
-        Txtbx_mensajes.AppendText(vbNewLine & usuario & ": " & vbNewLine &
+        Txtbx_mensajes.AppendText(vbNewLine & usuario1 & ": " & vbNewLine &
                                   mensaje & vbNewLine & tiempo)
     End Sub
 

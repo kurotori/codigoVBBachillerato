@@ -1,0 +1,16 @@
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\ProcesarDatosDeConsulta.exe.config
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\ProcesarDatosDeConsulta.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\ProcesarDatosDeConsulta.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\ProcesarDatosDeConsulta.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\MySql.Data.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\Google.Protobuf.dll
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\bin\Debug\MySql.Data.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.vbprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.Libreria.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.Resources.resources
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.vbproj.GenerateResource.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.vbproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.vbproj.CopyComplete
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.exe
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.xml
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\ProcesarDatosDeConsulta\ProcesarDatosDeConsulta\obj\Debug\ProcesarDatosDeConsulta.pdb

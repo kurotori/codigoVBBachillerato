@@ -56,6 +56,21 @@
     End Sub
 
     Private Sub Btn_enviar_Click(sender As Object, e As EventArgs) Handles Btn_enviar.Click
-        Enviar_mensajes()
+        Dim longTexto As Integer = Txtbx_mensaje_enviar.Text.Length
+
+        If longTexto > 0 Then
+            Enviar_mensajes()
+        End If
+
+    End Sub
+
+    Private Sub Txtbx_mensaje_enviar_KeyDown(sender As Object, e As KeyEventArgs) Handles Txtbx_mensaje_enviar.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Dim longTexto As Integer = Txtbx_mensaje_enviar.Text.Length
+
+            If longTexto > 0 Then
+                Enviar_mensajes()
+            End If
+        End If
     End Sub
 End Class

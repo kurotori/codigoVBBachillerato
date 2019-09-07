@@ -1,0 +1,17 @@
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\Parser.exe.config
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\Parser.exe
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\Parser.pdb
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\Parser.xml
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\MySql.Data.dll
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\Google.Protobuf.dll
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\luiss\source\repos\Parser\Parser\bin\Debug\MySql.Data.xml
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.vbprojAssemblyReference.cache
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.Form1.resources
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.Resources.resources
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.vbproj.GenerateResource.cache
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.vbproj.CoreCompileInputs.cache
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.vbproj.CopyComplete
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.exe
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.xml
+C:\Users\luiss\source\repos\Parser\Parser\obj\Debug\Parser.pdb

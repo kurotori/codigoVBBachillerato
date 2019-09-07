@@ -40,8 +40,10 @@ Partial Class ListaConectados
         Me.dgv_tabla_conectados.AllowUserToResizeColumns = False
         Me.dgv_tabla_conectados.AllowUserToResizeRows = False
         Me.dgv_tabla_conectados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_tabla_conectados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_tabla_conectados.Location = New System.Drawing.Point(12, 79)
         Me.dgv_tabla_conectados.Name = "dgv_tabla_conectados"
+        Me.dgv_tabla_conectados.ReadOnly = True
         Me.dgv_tabla_conectados.RowTemplate.Height = 24
         Me.dgv_tabla_conectados.Size = New System.Drawing.Size(389, 408)
         Me.dgv_tabla_conectados.TabIndex = 0

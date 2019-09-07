@@ -179,9 +179,16 @@ Module BaseDeDatos
 
         Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
 
-        Dim consulta As String = "select ci, nombre, estado from chat.usuario " &
-                                 "where ci != @ci " &
-                                 "order by estado, nombre"
+        Dim consulta As String = "SELECT ci, nombre, estado, " &
+                                 " (SELECT " &
+                                 "   COUNT(*) FROM chat.chatea_con " &
+                                 "   WHERE chatea_con.usuario_ci_rec = @ci AND " &
+                                 "   chatea_con.usuario_ci_emi = ci AND " &
+                                 "   chatea_con.visto ='no') AS 'mensajes' " &
+                                 "FROM chat.usuario " &
+                                 "WHERE ci!= @ci " &
+                                 "ORDER BY 4 DESC,estado, nombre ASC"
+
         Try
             conexion.Open()
             Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
@@ -199,7 +206,7 @@ Module BaseDeDatos
 
                 While lector.Read()
                     Dim fila As String() = {lector.GetString(0), lector.GetString(1),
-                                            lector.GetString(2)}
+                                            lector.GetString(2), lector.GetString(3)}
                     resultado.Rows.Add(fila)
                 End While
 
@@ -229,6 +236,138 @@ Module BaseDeDatos
             If lector.HasRows() Then
                 lector.Read()
                 resultado = lector.GetString(0)
+            End If
+        Catch ex As Exception
+            MsgBox("No se ha podido conectar al servidor.")
+            MsgBox("Error: " & ex.ToString)
+        End Try
+
+        conexion.Close()
+
+        Return resultado
+    End Function
+
+    Function VerEstado(ci As String) As String
+        Dim resultado As String = ""
+
+        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+
+        Dim consulta As String = "select estado from chat.usuario where ci=@ci"
+
+        Try
+            conexion.Open()
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@ci", ci)
+            Dim lector As MySqlDataReader = comando.ExecuteReader()
+            If lector.HasRows() Then
+                lector.Read()
+                resultado = lector.GetString(0)
+            End If
+        Catch ex As Exception
+            MsgBox("No se ha podido conectar al servidor.")
+            MsgBox("Error: " & ex.ToString)
+        End Try
+
+        conexion.Close()
+
+        Return resultado
+    End Function
+
+    Function RecibirMensajesDeUsuario(ci_usuario_1 As String,
+                                      ci_usuario_2 As String,
+                                      nombre_usuario_2 As String) As String
+        Dim resultado As String = ""
+
+        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+
+        Dim consulta As String = "select usuario_ci_emi,mensaje,enviado" &
+                                 " from chat.chatea_con where" &
+                                 " usuario_ci_emi=@ci_usuario_1 AND usuario_ci_rec=@ci_usuario_2" &
+                                 " OR usuario_ci_rec=@ci_usuario_1 AND usuario_ci_emi=@ci_usuario_2" &
+                                 " limit 100"
+        Try
+            conexion.Open()
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@ci_usuario_1", ci_usuario_1)
+            comando.Parameters.AddWithValue("@ci_usuario_2", ci_usuario_2)
+            Dim lector As MySqlDataReader = comando.ExecuteReader()
+
+            If lector.HasRows() Then
+                While lector.Read()
+                    Dim emisor As String = lector.GetString(0)
+                    Dim mensaje As String = lector.GetString(1) & vbNewLine
+                    Dim tiempo As String = vbTab & "--" & lector.GetDateTime(2)
+
+                    If emisor.Equals(ci_usuario_1) Then
+                        emisor = "Yo:" & vbNewLine
+                    Else
+                        emisor = nombre_usuario_2 & ":" & vbNewLine
+                    End If
+
+                    resultado = resultado & emisor & mensaje & tiempo & vbNewLine
+
+                End While
+            End If
+        Catch ex As Exception
+            MsgBox("No se ha podido conectar al servidor.")
+            MsgBox("Error: " & ex.ToString)
+        End Try
+
+        conexion.Close()
+
+        Return resultado
+    End Function
+
+    Function EnviarMensajeAUsuario(ci_usuario_1 As String,
+                              ci_usuario_2 As String,
+                              mensaje As String) As Boolean
+
+        Dim resultado As Boolean = False
+        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+
+        Dim consulta As String = "insert into" &
+                                 " chat.chatea_con(usuario_ci_emi,usuario_ci_rec,mensaje)" &
+                                 " values(@ci_usuario_1,@ci_usuario_2,@mensaje)"
+        Try
+            conexion.Open()
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@ci_usuario_1", ci_usuario_1)
+            comando.Parameters.AddWithValue("@ci_usuario_2", ci_usuario_2)
+            comando.Parameters.AddWithValue("@mensaje", mensaje)
+            Dim filas As Integer = comando.ExecuteNonQuery()
+
+            If filas > 0 Then
+                resultado = True
+            End If
+        Catch ex As Exception
+            MsgBox("No se ha podido conectar al servidor.")
+            MsgBox("Error: " & ex.ToString)
+        End Try
+
+        conexion.Close()
+
+        Return resultado
+    End Function
+
+    Function MarcarMensajesDeUsuario(ci_usuario_1 As String,
+                                    ci_usuario_2 As String) As Boolean
+
+        Dim resultado As Boolean = False
+        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+
+        Dim consulta As String = "UPDATE chat.chatea_con " &
+                                 "SET chat.chatea_con.visto='si' WHERE " &
+                                 "usuario_ci_rec=@ci_usuario_1 AND " &
+                                 "usuario_ci_emi=@ci_usuario_2"
+        Try
+            conexion.Open()
+            Dim comando As MySqlCommand = New MySqlCommand(consulta, conexion)
+            comando.Parameters.AddWithValue("@ci_usuario_1", ci_usuario_1)
+            comando.Parameters.AddWithValue("@ci_usuario_2", ci_usuario_2)
+            Dim filas As Integer = comando.ExecuteNonQuery()
+
+            If filas > 0 Then
+                resultado = True
             End If
         Catch ex As Exception
             MsgBox("No se ha podido conectar al servidor.")

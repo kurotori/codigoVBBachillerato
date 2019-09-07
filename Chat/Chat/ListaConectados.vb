@@ -20,6 +20,8 @@
 
         lbl_usuario.Text = Me.usuario
 
+        Console.WriteLine("---->" & ci)
+
 
         Select Case estado
             Case "activo"
@@ -75,10 +77,9 @@
         Dim seleccionado As Integer = dgv_tabla_conectados.SelectedCells.Item(0).RowIndex
         Dim ci_usuario2 As String = tablaUsuarios.Rows.Item(seleccionado)(0)
 
-        If Not ci_usuario2.Equals(ci) Then
-            Dim nuevoChat As New Chat(ci, ci_usuario2)
-            nuevoChat.Show()
-        End If
+        Dim nuevoChat As New Chat(ci, ci_usuario2)
+        Console.WriteLine("---->" & ci & "---" & ci_usuario2)
+        nuevoChat.Show()
 
     End Sub
 End Class

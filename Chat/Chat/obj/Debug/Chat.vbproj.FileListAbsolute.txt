@@ -27,3 +27,4 @@ C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\Chat\Chat\obj\Debug\Cha
 C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.exe
 C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.xml
 C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.pdb
+C:\Users\Sebastian\Documents\GitHub\codigoVBBachillerato\Chat\Chat\obj\Debug\Chat.vbprojAssemblyReference.cache

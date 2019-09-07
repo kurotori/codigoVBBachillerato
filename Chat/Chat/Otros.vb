@@ -2,13 +2,15 @@
     Function ExtraerUsuarios(datos As DataTable) As DataTable
         Dim resultado As New DataTable
 
-        resultado = datos.Clone()
+        If datos.Rows.Count > 0 Then
+            resultado = datos.Clone()
 
-        For Each fila As DataRow In datos.Rows
-            resultado.ImportRow(fila)
-        Next
+            For Each fila As DataRow In datos.Rows
+                resultado.ImportRow(fila)
+            Next
 
-        resultado.Columns.Remove("ci")
+            resultado.Columns.Remove("ci")
+        End If
 
         Return resultado
     End Function

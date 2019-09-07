@@ -25,7 +25,7 @@ Partial Class IniciarSesion
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtbx_ci = New System.Windows.Forms.TextBox()
         Me.txtbx_usuario = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_ingresar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -56,15 +56,15 @@ Partial Class IniciarSesion
         Me.txtbx_usuario.Size = New System.Drawing.Size(306, 40)
         Me.txtbx_usuario.TabIndex = 2
         '
-        'Button1
+        'btn_ingresar
         '
-        Me.Button1.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(124, 187)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(273, 53)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "INGRESAR"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_ingresar.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_ingresar.Location = New System.Drawing.Point(124, 187)
+        Me.btn_ingresar.Name = "btn_ingresar"
+        Me.btn_ingresar.Size = New System.Drawing.Size(273, 53)
+        Me.btn_ingresar.TabIndex = 3
+        Me.btn_ingresar.Text = "INGRESAR"
+        Me.btn_ingresar.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -88,12 +88,13 @@ Partial Class IniciarSesion
         '
         'IniciarSesion
         '
+        Me.AcceptButton = Me.btn_ingresar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 262)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_ingresar)
         Me.Controls.Add(Me.txtbx_usuario)
         Me.Controls.Add(Me.txtbx_ci)
         Me.Controls.Add(Me.Label1)
@@ -107,7 +108,7 @@ Partial Class IniciarSesion
     Friend WithEvents Label1 As Label
     Friend WithEvents txtbx_ci As TextBox
     Friend WithEvents txtbx_usuario As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_ingresar As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
 End Class

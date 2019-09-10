@@ -14,6 +14,7 @@
         Me.ci_usuario2 = ci_usuario2
 
         usuario2 = VerNombre(ci_usuario2)
+        Me.Text = "Chat con " & usuario2
         Lbl_usuario_rec.Text = usuario2
 
     End Sub
@@ -21,8 +22,8 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Tiempo.Interval = 5000
         Tiempo.Start()
-        Recibir_mensajes()
         ActualizarEstado()
+        Recibir_mensajes()
         Me.ActiveControl = Txtbx_mensaje_enviar
     End Sub
 
@@ -56,14 +57,6 @@
         End Select
 
     End Sub
-
-    Function MarcaDeTiempo() As String
-        Dim marca As String = vbNewLine & vbTab & "-- " &
-            String.Format("{0:dd/MM/yyyy}", DateTime.Now) & " " &
-            String.Format("{0:HH:mm:ss}", DateTime.Now) & " --"
-
-        Return marca
-    End Function
 
     Private Sub Recibir_mensajes()
         Txtbx_mensajes.Text = vbNullString

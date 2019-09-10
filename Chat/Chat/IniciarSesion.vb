@@ -25,4 +25,15 @@
     Private Sub IniciarSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LeerDatosServidorDeIni(archivoConfig)
     End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btn_configuracion.Click
+        Dim ventana_config As New Configuracion
+        ventana_config.ShowDialog()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        MsgBox("ChatBasico v 1.0" & vbNewLine _
+            & "por Sebastián de los Ángeles" & vbNewLine _
+            & "Íconos tomados de https://www.flaticon.com/authors/freepik")
+    End Sub
 End Class

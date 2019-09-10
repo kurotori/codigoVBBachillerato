@@ -21,7 +21,6 @@
                             NombreParam As String,
                             ValorParam As String)
         EscribirDatosINI(Seccion, NombreParam, ValorParam, Archivo)
-        MessageBox.Show("Configuración Guardada")
     End Sub
 
     Public Function LeerDeIni(Archivo As String,

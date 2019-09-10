@@ -2,6 +2,7 @@
 
 Module BaseDeDatos
 
+    Dim archivoConfig As String = Application.StartupPath & "\configuracion.ini"
     Private servidor As String = ""
     Private usuario As String = ""
     Private contrasenia As String = ""
@@ -10,13 +11,20 @@ Module BaseDeDatos
         servidor = LeerDeIni(archivoConfig, "BaseDeDatos", "servidor", "localhost")
         usuario = LeerDeIni(archivoConfig, "BaseDeDatos", "usuario", "root")
         contrasenia = LeerDeIni(archivoConfig, "BaseDeDatos", "contrasenia", "soloyoeh")
-        Console.WriteLine(servidor & "--" & usuario & "--" & contrasenia)
     End Sub
 
+    Function CrearConexion(servidor, usuario, contrasenia) As MySqlConnection
+        Dim conexion As New MySqlConnection
 
-    Function CrearConexion(servidor As String,
-                           usuario As String,
-                           contrasenia As String) As MySqlConnection
+        conexion.ConnectionString = "server=" & servidor & ";" &
+                                    "user=" & usuario & ";" &
+                                    "password=" & contrasenia & ";"
+
+        Return conexion
+    End Function
+
+    Function CrearConexion() As MySqlConnection
+        LeerDatosServidorDeIni(archivoConfig)
 
         Dim conexion As New MySqlConnection
 
@@ -45,7 +53,7 @@ Module BaseDeDatos
     Function UsuarioExiste(ci As String) As Boolean
         Dim resultado As Boolean = False
 
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "Select count(*) from chat.usuario where ci = @ci"
 
@@ -72,7 +80,7 @@ Module BaseDeDatos
 
     Function CrearUsuario(ci As String, nombre As String) As Boolean
         Dim final As Boolean = False
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "Insert into chat.usuario(ci,nombre) values (@ci,@nombre)"
 
@@ -102,7 +110,7 @@ Module BaseDeDatos
 
     Function IngresarUsuario(ci As String, nombre As String) As Boolean
         Dim final As Boolean = False
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "update chat.usuario set nombre=@nombre where ci=@ci"
 
@@ -143,7 +151,7 @@ Module BaseDeDatos
     End Function
 
     Sub CambiarNombre(ci As String, nombre As String)
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "update chat.usuario set nombre=@nombre where ci=@ci"
 
@@ -170,7 +178,7 @@ Module BaseDeDatos
     End Sub
 
     Sub CambiarEstado(ci As String, estado As String)
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "update chat.usuario set estado=@estado where ci=@ci"
 
@@ -199,7 +207,7 @@ Module BaseDeDatos
     Function VerUsuariosConectados(ci_usuario As String) As DataTable
         Dim resultado As New DataTable
 
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "SELECT ci, nombre, estado, " &
                                  " (SELECT " &
@@ -246,7 +254,7 @@ Module BaseDeDatos
     Function VerNombre(ci As String) As String
         Dim resultado As String = ""
 
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "select nombre from chat.usuario where ci=@ci"
 
@@ -272,7 +280,7 @@ Module BaseDeDatos
     Function VerEstado(ci As String) As String
         Dim resultado As String = ""
 
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "select estado from chat.usuario where ci=@ci"
 
@@ -300,7 +308,7 @@ Module BaseDeDatos
                                       nombre_usuario_2 As String) As String
         Dim resultado As String = ""
 
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "select usuario_ci_emi,mensaje,enviado" &
                                  " from chat.chatea_con where" &
@@ -317,7 +325,7 @@ Module BaseDeDatos
             If lector.HasRows() Then
                 While lector.Read()
                     Dim emisor As String = lector.GetString(0)
-                    Dim mensaje As String = lector.GetString(1) & vbNewLine
+                    Dim mensaje As String = vbTab & lector.GetString(1) & vbNewLine
                     Dim tiempo As String = vbTab & "--" & lector.GetDateTime(2)
 
                     If emisor.Equals(ci_usuario_1) Then
@@ -345,7 +353,7 @@ Module BaseDeDatos
                               mensaje As String) As Boolean
 
         Dim resultado As Boolean = False
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "insert into" &
                                  " chat.chatea_con(usuario_ci_emi,usuario_ci_rec,mensaje)" &
@@ -375,7 +383,7 @@ Module BaseDeDatos
                                     ci_usuario_2 As String) As Boolean
 
         Dim resultado As Boolean = False
-        Dim conexion As MySqlConnection = CrearConexion(servidor, usuario, contrasenia)
+        Dim conexion As MySqlConnection = CrearConexion()
 
         Dim consulta As String = "UPDATE chat.chatea_con " &
                                  "SET chat.chatea_con.visto='si' WHERE " &

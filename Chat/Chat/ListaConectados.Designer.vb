@@ -23,6 +23,7 @@ Partial Class ListaConectados
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ListaConectados))
         Me.Tiempo = New System.Windows.Forms.Timer(Me.components)
         Me.dgv_tabla_conectados = New System.Windows.Forms.DataGridView()
         Me.lbl_usuario = New System.Windows.Forms.Label()
@@ -39,13 +40,14 @@ Partial Class ListaConectados
         Me.dgv_tabla_conectados.AllowUserToDeleteRows = False
         Me.dgv_tabla_conectados.AllowUserToResizeColumns = False
         Me.dgv_tabla_conectados.AllowUserToResizeRows = False
+        Me.dgv_tabla_conectados.BackgroundColor = System.Drawing.Color.White
         Me.dgv_tabla_conectados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_tabla_conectados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgv_tabla_conectados.Location = New System.Drawing.Point(12, 79)
         Me.dgv_tabla_conectados.Name = "dgv_tabla_conectados"
         Me.dgv_tabla_conectados.ReadOnly = True
         Me.dgv_tabla_conectados.RowTemplate.Height = 24
-        Me.dgv_tabla_conectados.Size = New System.Drawing.Size(389, 408)
+        Me.dgv_tabla_conectados.Size = New System.Drawing.Size(489, 408)
         Me.dgv_tabla_conectados.TabIndex = 0
         '
         'lbl_usuario
@@ -71,10 +73,11 @@ Partial Class ListaConectados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(415, 499)
+        Me.ClientSize = New System.Drawing.Size(513, 499)
         Me.Controls.Add(Me.cmbx_estado)
         Me.Controls.Add(Me.lbl_usuario)
         Me.Controls.Add(Me.dgv_tabla_conectados)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ListaConectados"
         Me.Text = "ListaConectados"
         CType(Me.dgv_tabla_conectados, System.ComponentModel.ISupportInitialize).EndInit()

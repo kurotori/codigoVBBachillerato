@@ -23,6 +23,7 @@ Partial Class Chat
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Chat))
         Me.Txtbx_mensajes = New System.Windows.Forms.TextBox()
         Me.Txtbx_mensaje_enviar = New System.Windows.Forms.TextBox()
         Me.Btn_enviar = New System.Windows.Forms.Button()
@@ -36,7 +37,7 @@ Partial Class Chat
         Me.Txtbx_mensajes.BackColor = System.Drawing.Color.White
         Me.Txtbx_mensajes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Txtbx_mensajes.Location = New System.Drawing.Point(25, 57)
-        Me.Txtbx_mensajes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtbx_mensajes.Margin = New System.Windows.Forms.Padding(4)
         Me.Txtbx_mensajes.Multiline = True
         Me.Txtbx_mensajes.Name = "Txtbx_mensajes"
         Me.Txtbx_mensajes.ReadOnly = True
@@ -47,7 +48,7 @@ Partial Class Chat
         'Txtbx_mensaje_enviar
         '
         Me.Txtbx_mensaje_enviar.Location = New System.Drawing.Point(25, 343)
-        Me.Txtbx_mensaje_enviar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Txtbx_mensaje_enviar.Margin = New System.Windows.Forms.Padding(4)
         Me.Txtbx_mensaje_enviar.Multiline = True
         Me.Txtbx_mensaje_enviar.Name = "Txtbx_mensaje_enviar"
         Me.Txtbx_mensaje_enviar.Size = New System.Drawing.Size(473, 106)
@@ -57,7 +58,7 @@ Partial Class Chat
         '
         Me.Btn_enviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Btn_enviar.Location = New System.Drawing.Point(508, 343)
-        Me.Btn_enviar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Btn_enviar.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_enviar.Name = "Btn_enviar"
         Me.Btn_enviar.Size = New System.Drawing.Size(125, 106)
         Me.Btn_enviar.TabIndex = 2
@@ -100,7 +101,8 @@ Partial Class Chat
         Me.Controls.Add(Me.Btn_enviar)
         Me.Controls.Add(Me.Txtbx_mensaje_enviar)
         Me.Controls.Add(Me.Txtbx_mensajes)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Chat"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

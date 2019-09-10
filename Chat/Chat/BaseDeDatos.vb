@@ -2,9 +2,16 @@
 
 Module BaseDeDatos
 
-    Private servidor As String = "localhost"
-    Private usuario As String = "root"
-    Private contrasenia As String = "soloyoeh"
+    Private servidor As String = ""
+    Private usuario As String = ""
+    Private contrasenia As String = ""
+
+    Sub LeerDatosServidorDeIni(archivoConfig As String)
+        servidor = LeerDeIni(archivoConfig, "BaseDeDatos", "servidor", "localhost")
+        usuario = LeerDeIni(archivoConfig, "BaseDeDatos", "usuario", "root")
+        contrasenia = LeerDeIni(archivoConfig, "BaseDeDatos", "contrasenia", "soloyoeh")
+        Console.WriteLine(servidor & "--" & usuario & "--" & contrasenia)
+    End Sub
 
 
     Function CrearConexion(servidor As String,
@@ -19,6 +26,21 @@ Module BaseDeDatos
 
         Return conexion
     End Function
+
+    Sub ProbarConexion(servidor As String, usuario As String, contrasenia As String)
+        Dim conexion As New MySqlConnection
+        conexion = CrearConexion(servidor, usuario, contrasenia)
+
+        Try
+            conexion.Open()
+            MessageBox.Show("Conexión Exitosa")
+        Catch ex As Exception
+            MessageBox.Show("No se ha podido conectar al servidor")
+            MessageBox.Show("Error: " & ex.ToString)
+        End Try
+        conexion.Close()
+    End Sub
+
 
     Function UsuarioExiste(ci As String) As Boolean
         Dim resultado As Boolean = False

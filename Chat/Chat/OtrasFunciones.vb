@@ -1,4 +1,4 @@
-﻿Module Otros
+﻿Module OtrasFunciones
     Function ExtraerUsuarios(datos As DataTable) As DataTable
         Dim resultado As New DataTable
 

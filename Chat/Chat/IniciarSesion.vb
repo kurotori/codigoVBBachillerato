@@ -1,4 +1,7 @@
 ﻿Public Class IniciarSesion
+
+    Dim archivoConfig As String = Application.StartupPath & "\configuracion.ini"
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_ingresar.Click
         Dim ci As String = txtbx_ci.Text
         Dim nombre As String = txtbx_usuario.Text
@@ -17,5 +20,9 @@
             End If
         End If
 
+    End Sub
+
+    Private Sub IniciarSesion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LeerDatosServidorDeIni(archivoConfig)
     End Sub
 End Class

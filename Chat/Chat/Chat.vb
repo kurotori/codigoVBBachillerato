@@ -30,6 +30,9 @@
     Private Sub Tiempo_Tick(sender As Object, e As EventArgs) Handles Tiempo.Tick
         Recibir_mensajes()
         ActualizarEstado()
+        usuario2 = VerNombre(ci_usuario2)
+        Me.Text = "Chat con " & usuario2
+        Lbl_usuario_rec.Text = usuario2
     End Sub
 
     Private Sub Btn_enviar_Click(sender As Object, e As EventArgs) Handles Btn_enviar.Click

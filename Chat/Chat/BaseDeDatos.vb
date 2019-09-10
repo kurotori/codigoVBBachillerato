@@ -192,7 +192,7 @@ Module BaseDeDatos
             If resultado > 0 Then
                 MsgBox("Ahora tu estado en el chat es: " & estado.ToUpper)
             Else
-                MsgBox("Hubo un problema para cambiar tu nombre")
+                MsgBox("Hubo un problema para cambiar tu estado")
                 MsgBox("Por favor intenta nuevamente más tarde")
             End If
 

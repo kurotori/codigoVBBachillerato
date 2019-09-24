@@ -10,3 +10,15 @@ C:\Users\luiss\source\repos\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBo
 C:\Users\luiss\source\repos\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.exe
 C:\Users\luiss\source\repos\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.xml
 C:\Users\luiss\source\repos\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.pdb
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\bin\Debug\RecorrerBotones.exe.config
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\bin\Debug\RecorrerBotones.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\bin\Debug\RecorrerBotones.pdb
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\bin\Debug\RecorrerBotones.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.vbprojAssemblyReference.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.Form1.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.Resources.resources
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.vbproj.GenerateResource.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.vbproj.CoreCompileInputs.cache
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.exe
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.xml
+C:\Users\luiss\OneDrive\Documents\GitHub\codigoVBBachillerato\codigoVBBachillerato\RecorrerBotones\RecorrerBotones\obj\Debug\RecorrerBotones.pdb

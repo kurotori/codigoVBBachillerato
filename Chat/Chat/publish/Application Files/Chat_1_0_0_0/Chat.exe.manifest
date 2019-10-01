@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Chat.exe" version="1.0.0.0" publicKeyToken="adfc3448758a68b5" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Chat" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Chat.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de UAC
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar Virtualización de archivos y Registro para compatibilidad con 
+         versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chat.exe" size="113120">
+      <assemblyIdentity name="Chat" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oEzpzxX/wfpPhmcoTjH3WJkh1hAGVUkrMKQbR7Yql/c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="708608">
+      <assemblyIdentity name="MySql.Data" version="8.0.15.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>csTtN1Dz7O3Ap24hir7uPIxKZlXZR6aCAPiKHL53CWo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Chat.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c922zfRb5ORzqEo8SDjt8Mx8lDMhGTWhqKcK/oileDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="chat.png" size="8324">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nhWGXUAkd7GxUivbZ/jGMVYXz9R7Ayngt7CDKbM0VUI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-8DQQV14\luiss" issuerKeyHash="41a8ee6bfe42259c3ca715aeccd9d6bd988fec38" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>9KRp8bmi+AEqMsxTci9Pggp8BRqg1aQEfuauhWONuTI=</DigestValue></Reference></SignedInfo><SignatureValue>A5J7AkUsFwbXxW0o1YlEq0RUDm4RBOS/Spsm5SDRI0rmJGAlRp1RTM1IOG8v7BgPHETtZ3ZgnsbWG/4sqOc+EaL38kGWzrO8SAJc/OUctgipAUwZKXEOyOjjcAZv5Gw7k8w8unsZgTLfoE/LtDs7vXIJ+kzOIQtRdxo7RYCCrEI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sQr3ZsALlD384DRAZ8pox7oqXFQo6xCxPztz5PMamToJG2U9UssMvtzdlz/66xMgBbqa7fGZLMGVnFvNsxY8FXGSPQ133LXhBCbFgrBCMDoQgQ9DOsu4TxvyK58gJVb7aBWKqFrWd9UXYPAzqziTNsbZQ91/CMtHBKN7QFB+jPk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="32b98d6385aee67e04a4d5a01a057c0a824f2f7253cc322a01f8a2b9f169a4f4" Description="" Url=""><as:assemblyIdentity name="Chat.exe" version="1.0.0.0" publicKeyToken="adfc3448758a68b5" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-8DQQV14\luiss</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oz+6vz5fD47HO3mYlMHA56CuVepxdfRlVwOcLRGLHXA=</DigestValue></Reference></SignedInfo><SignatureValue>Ll0C7C/DBXCF4898CvOW6czClViVPDii19J5qRP/OC4RdaAZhRDsbC59erqvPSHAsYLFSK1ARBUyQawQZZ5V0mNfNe9WNk/7FRjXq0VGOJTu3PYthRi+X1nVAmvTpMnDD+FIqNqHjAtQ6RoFsvQWbM/wYpKuBaNoZ8aFcH/sCfU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sQr3ZsALlD384DRAZ8pox7oqXFQo6xCxPztz5PMamToJG2U9UssMvtzdlz/66xMgBbqa7fGZLMGVnFvNsxY8FXGSPQ133LXhBCbFgrBCMDoQgQ9DOsu4TxvyK58gJVb7aBWKqFrWd9UXYPAzqziTNsbZQ91/CMtHBKN7QFB+jPk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQLdMWylWbIolL6ngfyF4fsjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgARABRAFEAVgAxADQAXABsAHUAaQBzAHMwHhcNMTkxMDAxMTQ0NjExWhcNMjAwOTMwMjA0NjExWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADgARABRAFEAVgAxADQAXABsAHUAaQBzAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALEK92bAC5Q9/OA0QGfKaMe6KlxUKOsQsT87c+TzGpk6CRtlPVLLDL7c3Zc/+usTIAW6mu3xmSzBlZxbzbMWPBVxkj0Nd9y14QQmxYKwQjA6EIEPQzrLuE8b8iufICVW+2gViqha1nfVF2DwM6s4kzbG2UPdfwjLRwSje0BQfoz5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAgDLGLEuFc6e9Z6y7EdPbl2CHE4jSMXoJC2Zf3jRBP7Y8GyyA5N7t+JxE1SRR2ZS74W65MV9GFcM7qkvhIwci4DRgB6vdxi27f4d57htMTLNlkxsvoe+vEsHBzdn/ykBwYepZ1lbJ+8uk6kKCqR00xlNEJlty34yMumfqjbnU3xo=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
